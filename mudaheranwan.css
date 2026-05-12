@@ -1,0 +1,257 @@
+/* mudaheranwan.css - External stylesheet */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background-color: #f4f7fc;
+    color: #1e2a3e;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 2rem 3rem;
+    flex: 1;
+}
+
+.page-header {
+    background-color: #254667;
+    padding: 1.2rem 2rem;
+    box-shadow: 0 4px 12px rgba(51, 222, 36, 0.08);
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2.2rem;
+    flex-wrap: wrap;
+}
+
+.nav-list li a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 32px;
+    transition: all 0.25s ease-in-out;
+    background-color: transparent;
+    color: #ecf0f1;
+    letter-spacing: 0.3px;
+}
+
+.nav-list li a:hover {
+    background-color: #f39c12;
+    color: #0b5ce9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-list li a.active-page {
+    background-color: #e67e22;
+    color: white;
+    pointer-events: none;
+}
+
+.hero {
+    background: white;
+    padding: 2rem 2rem;
+    border-radius: 28px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    border-left: 6px solid #2c3e50;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.75rem;
+    color: #1f3a4b;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+.card-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1.2rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 24px;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.05);
+    transition: 0.2s;
+    border: 1px solid #e2edf2;
+}
+
+.card h3 {
+    margin-bottom: 0.75rem;
+    color: #2c3e50;
+}
+
+
+.site-footer {
+    background: #8cb3c4;
+    padding: 30px 20px 20px;
+}
+
+.footer-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-block {
+    flex: 1 1 240px;
+    min-width: 220px;
+    background: transparent;
+    padding: 18px 0;
+    border-radius: 0;
+}
+
+.footer-block h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    border-bottom: none;
+    padding-bottom: 0;
+    color: #0d0d0e;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(23, 202, 89, 0.12);
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.map-wrapper {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(6, 172, 70, 0.15);
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #0c571f;
+    transition: background 0.2s ease;
+}
+
+.social-icon:hover {
+    background: #6ef772;
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+}
+
+.footer-form label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.footer-form input,
+.footer-form select,
+.footer-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #149bc1;
+    border-radius: 8px;
+    background: #11ca0e;
+    color: #f1f3f4;
+}
+
+.footer-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.footer-form button {
+    margin-top: 10px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #c23631;
+    color: #458455;
+    cursor: pointer;
+}
+
+.footer-form button:hover {
+    background: #1e90ff;
+}
+
+.footer-bottom {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #0e6313;
+}
+
+@media (max-width: 840px) {
+    .footer-sections {
+        flex-direction: column;
+    }
+}
